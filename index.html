@@ -8,53 +8,61 @@
 	<meta name="description" content="Контрольная работа по программированию интернет-приложений">
 	<meta name="keywords" content="Cat">
 	<title>Stupid website for a cat</title>
-	<link rel="shortcut icon" href="img/icon.ico" type="image/x-icon" />
+	<link rel="shortcut icon" href="img/icons/icon.ico" type="image/x-icon" />
 	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/page-styles/index.css">
+	<link rel="stylesheet" href="css/footer.css">
+	<link rel="stylesheet" href="css/animations.css">
 </head>
 
 <body>
 	<header>
-		<div class="main-text">
+		<div class="main-text scroll-animation">
 			<div class="main-text__title"><b>STUPID WEBSITE FOR A CAT</b></div>
 			<div class="main-text__sub-title">ЭТО ЕВА - ОНА МОЯ КОШКА</div>
 		</div>
-		<div class="author">ROMAN MAVRIN<br>MAY 2025</div>
+		<div class="bottom-header scroll-animation">
+			<a href="html/gallery.html" class="bottom-header__link">Больше фото</a>
+			<div class="bottom-header__separator">|</div>
+			<div class="bottom-header__author">Создано: Май 2025</div>
+			<div class="bottom-header__separator">|</div>
+			<a href="http://project13257933.tilda.ws/" class="bottom-header__link">Референс</a>
+		</div>
 	</header>
 	<main>
-		<div class="description">
-			<span class="description__text">
+		<div class="description scroll-animation">
+			<p class="description__text">
 				Мою кошку зовут Ева. Я взял ее в январе 2023-го года еще котенком, ей было около 3-х месяцев.
 				С тех пор она живет со мной.
-			</span>
-			<span class="description__subtext">
+			</p>
+			<p class="description__subtext">
 				(у нее не было выбора)
-			</span>
+			</p>
 		</div>
 		<div class="pictures">
-			<img src="img/2.jpg" alt="pic">
-			<img src="img/3.jpg" alt="pic">
-			<img src="img/5.jpg" alt="pic">
-			<img src="img/7.jpg" alt="pic">
-			<img src="img/9.jpg" alt="pic">
-			<img src="img/12.jpg" alt="pic">
+			<img src="img/index/2.jpg" alt="pic" class="scroll-animation">
+			<img src="img/index/3.jpg" alt="pic" class="scroll-animation">
+			<img src="img/index/5.jpg" alt="pic" class="scroll-animation">
+			<img src="img/index/7.jpg" alt="pic" class="scroll-animation">
+			<img src="img/index/9.jpg" alt="pic" class="scroll-animation">
+			<img src="img/index/12.jpg" alt="pic" class="scroll-animation">
 		</div>
-		<div class="picture-with-text">
-			<span class="picture-with-text__text">
+		<div class="picture-with-text scroll-animation">
+			<p class="picture-with-text__text">
 				Ева - шотладская вислоухая кошка.
 				Они обладают спокойным, ласковым нравом и хорошо уживаются с людьми.
 				У них крепкое телосложение, круглые глаза и мягкая, плюшевая шерсть.
 				Они очень привязаны к хозяевам, любят уют и редко бывают агрессивными.
-			</span>
+			</p>
 			<div class="picture-with-text__pic">
-				<img src="img/4.jpg" alt="pic">
+				<img src="img/index/4.jpg" alt="pic">
 			</div>
 		</div>
-		<div class="big-pic-separator">
-			<img src="img/8.jpg" alt="pic">
+		<div class="big-pic-separator scroll-animation">
+			<img src="img/index/8.jpg" alt="pic">
 		</div>
-		<div class="conclusion">
-			<img src="img/6.jpg" alt="pic" class="conclusion__pic">
+		<div class="conclusion scroll-animation">
+			<img src="img/index/6.jpg" alt="pic" class="conclusion__pic">
 			<div class="conclusion__text">
 				<div class="conclusion__maintext">
 					<p>Сейчас Еве примерно 2,5 года. Она выросла в большую красивую кису.</p>
@@ -62,22 +70,24 @@
 						подоконниках.</p>
 					<p>А когда она не спит, то любит побегать или поиграться.</p>
 					<p>В конце 2023-го года Ева была стерилизована и теперь она стала более здоровой кошкой.</p>
-					</div>
-				<span class="conclusion__subtext">(Да, на фото она счастлива)</span>
+				</div>
+				<p class="conclusion__subtext">(Да, на фото она счастлива)</p>
 			</div>
 		</div>
-		<div class="lol">
-			<span class="lol__text">Найдите 10 отличий</span>
-			<img src="img/13.jpg" alt="pic" class="lol__pic">
-		</div>
+		<figure class="lol scroll-animation">
+			<figcaption class="lol__text">Найдите 10 отличий</figcaption>
+			<img src="img/index/13.jpg" alt="pic" class="lol__pic">
+		</figure>
 	</main>
 	<footer>
-		<div class="bottom-text">
-			<p>Маврин Роман Алексеевич<br>б1-ИФСТипу-11<br>Программирование интернет-приложений</p>
-			<a href="http://project13257933.tilda.ws/" class="bottom-text__link">Референс с Tilda.ws</a>
-		</div>
+		<div id="footer"></div>
 	</footer>
-	<script src="js/script.js"></script>
+
+	<button id="back-to-top"></button>
+
+	<script src="js/page-js/index.js"></script>
+	<script src="js/animations.js"></script>
+	<script src="js/footer.js"></script>
 </body>
 
 </html>
