@@ -31,15 +31,35 @@ p {
 
 header {
 	display: flex;
-  justify-content: center;
-  align-items: center;
+  	justify-content: center;
+  	align-items: center;
 	min-height: 100px;
-	margin: 0 0 20px 0;
+	margin: 20px auto;
+
+	@media (max-width: 1024px) {
+		min-height: 50px;
+    }
+
+	@media (max-width: 768px) {
+		min-height: 50px;
+    }
 }
 
 .header__text {
 	text-align: center;
 	font-size: 36pt;
+
+	@media (max-width: 1440px) {
+		font-size: 28pt;
+    }
+
+	@media (max-width: 1024px) {
+		font-size: 24pt;
+    }
+
+	@media (max-width: 768px) {
+		font-size: 20pt;
+    }
 }
 
 .bottom-text p {
@@ -56,16 +76,34 @@ header {
 
 .pictures img {
   width: 100%;
-  height: 500px;
+  height: 100%;
   object-fit: cover;
   border-radius: 10px;
+
 }
 
 .pictures {
 	display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  max-width: 1250px;
-  margin: 0 auto;
-  justify-items: center;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 20px;
+	max-width: 1250px;
+	margin: 0 auto;
+	justify-items: center;
+
+  	@media (max-width: 1440px) {
+		gap: 15px;
+		max-width: 1150px;
+	}
+
+	@media (max-width: 1024px) {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 10px;
+		max-width: 950px;
+	}
+
+	@media (max-width: 768px) {
+		grid-template-columns: 1fr;
+		max-width: 950px;
+		margin: auto 10px;
+    }
 }
