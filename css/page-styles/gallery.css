@@ -1,12 +1,13 @@
 :root {
-    --color-main: #ffffff;
-    --color-hover: #ff0000;
-    --color-text: #000000c0;
+	--color-main: #ffffff;
+	--color-hover: #ff0000;
+	--color-text: #000000c0;
 }
 
 a {
-	color: var(--color-main);
-	text-decoration: none;
+	color: var(--color-text);
+	font-family: 'Microsoft Sans Serif', sans-serif;
+	text-decoration: underline;
 	transition: all.3s ease;
 	-ms-transition: all.3s ease;
 	-o-transition: all.3s ease;
@@ -14,9 +15,9 @@ a {
 	-webkit-transition: all.3s ease;
 }
 
-a:hover{
+a:hover {
 	color: var(--color-hover);
-	text-decoration: none;
+	text-decoration: underline;
 	transition: all.3s ease;
 	-ms-transition: all.3s ease;
 	-o-transition: all.3s ease;
@@ -31,18 +32,25 @@ p {
 
 header {
 	display: flex;
-  	justify-content: center;
-  	align-items: center;
+	justify-content: center;
+	align-items: center;
 	min-height: 100px;
 	margin: 20px auto;
 
 	@media (max-width: 1024px) {
 		min-height: 50px;
-    }
+	}
 
 	@media (max-width: 768px) {
 		min-height: 50px;
-    }
+	}
+}
+
+.head {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
 }
 
 .header__text {
@@ -51,34 +59,34 @@ header {
 
 	@media (max-width: 1440px) {
 		font-size: 28pt;
-    }
+	}
 
 	@media (max-width: 1024px) {
 		font-size: 24pt;
-    }
+	}
 
 	@media (max-width: 768px) {
 		font-size: 20pt;
-    }
+	}
 }
 
 .bottom-text p {
 	color: var(--color-main);
-  line-height: 1.5;
+	line-height: 1.5;
 }
 
 .bottom-text__link {
 	display: inline-block;
-  margin-top: 30px;
-  text-decoration: underline;
+	margin-top: 30px;
+	text-decoration: underline;
 	font-size: 10pt;
 }
 
 .pictures img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 10px;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 10px;
 
 }
 
@@ -90,7 +98,7 @@ header {
 	margin: 0 auto;
 	justify-items: center;
 
-  	@media (max-width: 1440px) {
+	@media (max-width: 1440px) {
 		gap: 15px;
 		max-width: 1150px;
 	}
@@ -105,5 +113,5 @@ header {
 		grid-template-columns: 1fr;
 		max-width: 950px;
 		margin: auto 10px;
-    }
+	}
 }
